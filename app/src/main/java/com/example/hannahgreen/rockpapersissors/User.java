@@ -4,13 +4,13 @@ import com.example.hannahgreen.rockpapersissors.Enums.ChoiceType;
 
 public class User{
 
-    private ChoiceType choiceType;
+//    private ChoiceType choiceType;
 
-    public User(ChoiceType choiceType){
-        this.choiceType = choiceType;
+    public User(){
+//        this.choiceType = choiceType;
     }
 
-    public ChoiceType makeChoice() {
-        return this.choiceType;
+    public ChoiceType makeChoice(ChoiceType choiceType) {
+        return choiceType;
     }
 }

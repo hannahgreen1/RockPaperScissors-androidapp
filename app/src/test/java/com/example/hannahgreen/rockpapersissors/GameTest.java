@@ -20,14 +20,24 @@ public class GameTest {
     public void before(){
        this.game = new Game();
        this.android = new Android();
-       user = new User(ChoiceType.PAPER);
+       user = new User();
 
     }
 
     @Test
     public void canMakeChoice(){
-        assertEquals(ChoiceType.PAPER, user.makeChoice());
+        assertEquals(ChoiceType.PAPER, user.makeChoice(ChoiceType.PAPER));
     }
+
+//    @Test
+//    public void canMakeRandomChoice(){
+//        assertEquals(ChoiceType.ROCK, android.getRandomChoice());
+//    }
+
+//    @Test
+//    public void canCheckWinner(){
+//        assertEquals("It's a draw", game.checkWinner());
+//    }
 
 
 
