@@ -19,7 +19,7 @@ public class Game {
         if (userChoice == ChoiceType.PAPER && androidChoice == ChoiceType.ROCK){
             return "User wins";}
         else if (userChoice == ChoiceType.ROCK && androidChoice == ChoiceType.PAPER)
-            return "Android wins";
+            return "Android wins" + androidChoice.toString();
         else if (userChoice == ChoiceType.PAPER && androidChoice == ChoiceType.SCISSORS)
             return "Android wins";
         else if (userChoice == ChoiceType.SCISSORS && androidChoice == ChoiceType.PAPER)

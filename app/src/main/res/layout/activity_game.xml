@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="80dp"
         android:onClick="onRockButtonClick"
         android:text="Rock"
@@ -31,6 +31,7 @@
         android:text="Paper"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_scissors"
+        app:layout_constraintHorizontal_bias="0.765"
         app:layout_constraintStart_toEndOf="@+id/button_rock" />
 
     <Button
@@ -38,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginTop="8dp"
         android:onClick="onScissorButtonClick"
         android:text="Scissors"
@@ -54,7 +55,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:textSize="18sp"
+        android:hint="Result"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/button_paper"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
